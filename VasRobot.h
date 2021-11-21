@@ -1,0 +1,24 @@
+#ifndef VASROBOT_H
+#define VASROBOT_H
+
+#include "Bludiste.h"
+#include "Prohledavac.h"
+#include <string>
+
+class VasRobot : public Prohledavac
+{
+    public:
+        VasRobot();
+        virtual bool start(Bludiste & map) ;
+        virtual bool start(BludisteOdkryte & map) ;
+        virtual bool stop() ;
+        virtual void krok(Bludiste & map) ;
+        virtual void krok(BludisteOdkryte & map) ;
+        virtual std::string jmeno() ;
+
+    protected:
+
+    private:
+};
+
+#endif // ROBOT_BELDA_H
